@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General styles */
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+/* Header styling */
+.header {
+  @apply bg-white shadow-md py-4 px-6 flex justify-between items-center fixed w-full top-0 z-50;
+}
+
+.nav-links {
+  @apply flex space-x-6;
+}
+
+.nav-links a {
+  @apply text-gray-700 hover:text-blue-500 transition duration-300;
+}
+
+.auth-buttons {
+  @apply flex space-x-4;
+}
+
+.auth-buttons a {
+  @apply px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300;
+}
+
+/* Hero Section */
+.hero {
+  @apply h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-green-400 text-white text-center;
+}
+
+.hero h1 {
+  @apply text-4xl md:text-6xl font-bold;
+}
+
+.hero p {
+  @apply mt-4 text-lg md:text-xl;
+}
+
+.hero button {
+  @apply mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300;
+}
+
+/* Animation for slides */
+.slide-container {
+  @apply w-full max-w-5xl mx-auto overflow-hidden mt-20;
+}
+
+.slide {
+  @apply flex justify-center items-center text-white text-2xl font-bold py-40;
+}
+
+/* Footer */
+.footer {
+  @apply bg-gray-800 text-white text-center py-4 mt-12;
+}
+
+.footer p {
+  @apply text-sm;
+}
